@@ -1,8 +1,5 @@
 package com.oicen.kumparespaymentscanner;
 
-
-
-
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -33,7 +30,6 @@ import java.util.Map;
 
 import static com.oicen.kumparespaymentscanner.BuildConfig.HOST;
 
-
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     Button scanBtn;
     TextView messageText, messageFormat;
@@ -52,6 +48,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         // adding listener to the button
         scanBtn.setOnClickListener(this);
+
     }
 
     @Override
