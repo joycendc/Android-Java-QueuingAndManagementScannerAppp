@@ -38,12 +38,14 @@ android {
     buildTypes {
         def ipList = getLocalIPv4();
         debug {
-            buildConfigField "String", "HOST", ipList.empty ? '""' : '"http://' + ipList.get(12) + '/API/"'
+//            buildConfigField "String", "HOST", ipList.empty ? '""' : '"http://' + ipList.get(1) + '/API/"'
 //            buildConfigField "String", "HOST", '"https://kumpares-management.ml/API/"'
+            buildConfigField "String", "HOST", '"https://kumpares-management.herokuapp.com/API/"'
         }
         release {
 //            buildConfigField "String", "HOST", ipList.empty ? '""' : '"http://' + ipList.get(1) + '/API/"'
-            buildConfigField "String", "HOST", '"https://kumpares-management.ml/API/"'
+//            buildConfigField "String", "HOST", '"https://kumpares-management.ml/API/"'
+            buildConfigField "String", "HOST", '"https://kumpares-management.herokuapp.com/API/"'
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'

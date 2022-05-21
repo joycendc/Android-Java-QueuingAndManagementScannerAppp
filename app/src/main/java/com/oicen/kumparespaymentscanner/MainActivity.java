@@ -135,15 +135,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 params.put("queue_id", queueId);
                 return params;
             }
-            @Override
-            public Map<String, String> getHeaders() throws AuthFailureError {
-                Map<String, String> headers = new HashMap<>();
-                String KEY_COOKIE = "cookie";
-                String VALUE_CONTENT = "__test=5083fb2d45d3ffeb754bd17e54732692; expires=Tue, 19 Jan 2038 03:14:07 UTC; PHPSESSID=bfa95c09254ed73071abd5eb05059595";
-
-                headers.put(KEY_COOKIE, VALUE_CONTENT);
-                return headers;
-            }
+//            @Override
+//            public Map<String, String> getHeaders() throws AuthFailureError {
+//                Map<String, String> headers = new HashMap<>();
+//                String KEY_COOKIE = "cookie";
+//                String VALUE_CONTENT = "__test=5083fb2d45d3ffeb754bd17e54732692; expires=Tue, 19 Jan 2038 03:14:07 UTC; PHPSESSID=8c3ceff11e0bad6291a5fef728f39ef3; path=/";
+//
+//                headers.put(KEY_COOKIE, VALUE_CONTENT);
+//                return headers;
+//            }
         };
         VolleySingleton.getInstance(this).addToRequestQueue(stringRequest);
     }
